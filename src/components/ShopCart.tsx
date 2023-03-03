@@ -5,7 +5,7 @@ import img2 from "../assests/Rectangle 143.png"
 const ShopCart = () => {
   return (
     <div>
-        <div className=' bg-white shadow lg:w-[30%]  lg:h-[550px] absolute top-20  right-5 rounded-xl pb-9 md:w-[70%] md:h-[550px] sm:w-[90%] '>
+        <div className=' hidden bg-white shadow lg:w-[30%]  lg:h-[550px] absolute top-20  right-5 rounded-xl pb-9 md:w-[70%] md:h-[550px] sm:w-[90%] h '>
             <div>
                 <h1 className='text-center text-2xl pt-5 font-bold border-b-2 pb-7'>Cart</h1>
                 <div className=' flex  justify-between border-b-2 pb-7  '>
