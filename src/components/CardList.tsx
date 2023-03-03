@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from  '../assests/Rectangle 143.png'
 import img2 from  '../assests/Rectangle 149.png'
 import img3 from  '../assests/Rectangle 151.png'
-import storeItems from "../data/item.json"
+// import storeItems from "../data/item.json"
 
 
 const CardList = () => {
