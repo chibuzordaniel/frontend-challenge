@@ -29,7 +29,7 @@ const CardList = () => {
                                 <input 
                                 value={value.toLowerCase()}
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
-                                className='lg:pt-0 md:pt-0 sm:pt-3  outline-none w-[340px]'  
+                                className='lg:pt-0 md:pt-0 sm:pt-3  outline-none lg:w-[340px]'  
                                 type="text"   
                                 placeholder='Search for laptops'/>
                             </div>
