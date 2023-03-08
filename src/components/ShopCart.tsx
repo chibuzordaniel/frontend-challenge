@@ -1,42 +1,56 @@
 import React from 'react'
-import img1 from "../assests/Rectangle 149.png"
-import img2 from "../assests/Rectangle 143.png"
+// import img1 from "../assests/Rectangle 149.png"
+// import img2 from "../assests/Rectangle 143.png"
+
 
 const ShopCart = () => {
+  
+  
+  
+
+
   return (
-    <div>
-        <div className='   bg-white shadow lg:w-[30%]  lg:h-[550px] absolute top-20  right-5 rounded-xl pb-9 md:w-[70%] md:h-[550px] sm:w-[90%] h '>
-            <div>
-                <h1 className='text-center text-2xl pt-5 font-bold border-b-2 pb-7'>Cart</h1>
-                <div className=' flex  justify-between border-b-2 pb-2  '>
-                    <div className='flex'>
-                        <img className=' w-24 h-14 ml-5 mt-[30px]' src={img1} alt="" />
-                        <div>
-                         <h3 className=' pt-9 pl-3 font-semibold text-red-800'>Macbook Air</h3>
-                          <p className='pl-3 text-red-800 font-semibold'>N25,000</p>
-                        </div>
-                    </div>
-                    <button className=' bg-red-600  w-10 h-10 text-lg mt-[38px] flex justify-center items-center rounded-lg mr-8 font-bold text-white'>x</button>
+    <>
+        <div className=' hidden  bg-white border border-gray-400  lg:w-[30%]  lg:h-[50%]   lg:pb-10  rounded-xl  md:w-[70%] sm:pb-20 sm:w-[90%] sm:h-[40%]    '>
+            <div className='  '>
+                <div className=' flex justify-between border-b-2'>
+                    <h1 className=' pl-5 text-2xl pt-5 font-bold  pb-7'>Cart</h1>
+                    <h3 className=' text-2xl mr-5 mt-4 ' >x</h3>
                 </div>
-
-                <div className=' flex  justify-between border-b-2 pb-7  '>
-                    <div className='flex'>
-                        <img className=' w-24 h-14 ml-5 mt-[30px]' src={img2} alt="" />
-                        <div>
-                         <h3 className=' pt-9 pl-3 font-semibold text-red-800'>Macbook Air</h3>
-                          <p className='pl-3 text-red-800 font-semibold'>N25,000</p>
+                  <div>
+                   <div className=' '>
+                    <div className=' flex  justify-between border-b-2  pb-2  '>
+                        <div className='flex   '>
+                            <img className=' w-24 h-14 ml-5 mt-[17px]' src='' alt="" />
+                            <div>
+                            <h3 className=' pt-5 pl-3 font-semibold text-red-800 text-sm'></h3>
+                              <p className='pl-3 text-red-800 font-semibold'></p>
+                             
+                              
+                            </div>
+                            
                         </div>
+                        {/* <button className=' ' onClick={() => updateItemQuantity(item.id, item.updateItemQuantity -1 )}>-</button> */}
+                        {/* <button onClick={() => updateItemQuantity(item.id, item.updateItemQuantity   +1)}>+</button> */}
+                        <button className=' bg-red-600  text-white w-8 h-8 rounded-full  mt-6 mr-3' >x</button>
+                        
                     </div>
-                    <button className=' bg-red-600 w-10 h-10 text-lg mt-[38px] rounded-lg mr-8 font-bold text-white'>x</button>
-                </div>
-
-                 <div className=' flex justify-center mt-20'>
-                  
                  </div>
                 
+                 </div>
+                
+                <p className='pl-3 text-red-800 font-bold text-sm '></p>
+                <div className=' text-end'>
+                  <button className=' bg-red-600 text-white w-24 h-8 mt-5 mr-4 text-sm font-semibold'  >Clear Cart</button>
+                  <button className=' bg-blue-600 text-white w-24 h-8 mt-5 mr-4 text-sm font-semibold'  >Buy Now</button>
+                </div>
+
+                 <div className=' flex justify-center ' >
+                   <button className='  bg-red-600  w-48 h-12 mt-20 text-white font-bold text-xl' >Total </button> 
+                 </div>                
             </div>
         </div>
-    </div>
+    </>
   )
 }
 
