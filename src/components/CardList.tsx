@@ -29,16 +29,16 @@ const CardList = () => {
                                 <input 
                                 value={value.toLowerCase()}
                                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
-                                className='lg:pt-0 md:pt-0 sm:pt-3  outline-none'  
+                                className='lg:pt-0 md:pt-0 sm:pt-3  outline-none w-[340px]'  
                                 type="text"   
                                 placeholder='Search for laptops'/>
                             </div>
                             <button 
-                            onClick={() => isProduct()}
-                            type='button'
-                            className=' rounded-full bg-black  lg:w-40 lg:h-14 text-white font-semibold lg:mt-0 md:mt-0 lg:relative md:w-40 md:h-14 md:relative sm:absolute  sm:mt-7 sm:h-12 sm:w-[100%]  ' >
+                                onClick={() => isProduct()}
+                                type='button'
+                                className=' rounded-full bg-black  lg:w-40 lg:h-14 text-white font-semibold lg:mt-0 md:mt-0 lg:relative md:w-40 md:h-14 md:relative sm:absolute  sm:mt-7 sm:h-12 sm:w-[100%]  ' >
                                 Search Now
-                                </button>
+                           </button>
                         </div>
                     </div>
                 </div>
