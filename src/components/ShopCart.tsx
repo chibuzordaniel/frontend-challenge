@@ -34,7 +34,7 @@ const price = product.map((e:any) => e.price);
                             </div>
                             
                         </div>
-                        <button type='button' onClick={() => removeCart(prod.name)} className=' bg-red-600  text-white w-8 h-8 rounded-full  mt-6 mr-3' ><BiX className=' w-6 h-6  ml-1'/></button>
+                        <button type='button' onClick={() => removeCart(prod.name)} className=' bg-red-600  text-white w-8 h-8 rounded-full  mt-6 mr-3' ><BiX className=' w-5 h-5  ml-1.5'/></button>
                     </div>
                  </div>
                  </>
