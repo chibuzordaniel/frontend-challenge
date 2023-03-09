@@ -17,7 +17,7 @@ const removeCart = (name:string) => {
             <div className='  '>
                 <div className=' flex justify-between border-b-2'>
                     <h1 className=' pl-5 text-2xl pt-5 font-bold  pb-7'>Cart</h1>
-                    <h3 onClick={() => setClose(!close)} className=' text-2xl mr-5 mt-4  ' ><BiX className=' cursor-pointer w-7 h-7 mt-2'/></h3>
+                    <h3 onClick={() => setClose(!close)} className=' text-2xl mr-5 mt-4  ' ><BiX className=' hover:bg-red-600 rounded-lg  hover:text-white cursor-pointer w-7 h-7 mt-2'/></h3>
                 </div>
                   <div className=' overflow-y-scroll w-[100%] h-[330px]'>
                    {product.map((prod:any) => (
