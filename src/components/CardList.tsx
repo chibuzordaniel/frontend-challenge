@@ -1,18 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, {useState} from 'react'
+import React from 'react'
 import { products } from '../data'
-import ItemCard from './ItemCard'
+import ItemCard from './ItemCard';
 
-const CardList = () => {
+type Props = {
+    value: string
+    setValue: any,
+    isProduct: () => void
+    filter: object[] | undefined
+    handleProduct: any
+} 
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [filter, setfilter] = useState<object[]>();
-    const [value, setValue] = useState<string>("");
-
-    const isProduct = () => {
-        const product = products.filter(product => product.name === value);
-        setfilter(product)
-    }
+const CardList = ({value, setValue, isProduct, filter, handleProduct}:Props) => {
  
   return (
     <>
@@ -51,14 +50,14 @@ const CardList = () => {
                               image={product.image} 
                               name={product.name} 
                               price={product.price} 
-                              product={product}  />   
+                              handleProduct={handleProduct}  />   
                             )):  filter.map((product:any) => (
                                 <ItemCard 
                                 key={product.id}
                                 image={product.image} 
                                 name={product.name} 
                                 price={product.price} 
-                                product={product}  />   
+                                handleProduct={handleProduct}  />   
                               ))
                     }
                     

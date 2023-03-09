@@ -1,13 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
 
 type Props={
   image: string
   name: string
   price: number
-  product: object
+  handleProduct: any
+
 }
 
-const ItemCard = ({image, name, price, product}:Props) => {
+const ItemCard = ({image, name, price, handleProduct}:Props) => {
 
   return (
     <div >
@@ -19,7 +21,7 @@ const ItemCard = ({image, name, price, product}:Props) => {
         </div>
         <button type='button' 
         className=' bg-[#8A0B0B] lg:w-20 lg:h-8 lg:text-sm text-white ml-4 lg:mt-2 font-semibold md:w-44 md:h-14 md:mt-5 md:text-xl sm:w-[32%] sm:h-8' 
-        onClick={() => product}>Add Cart</button>
+        onClick={() => handleProduct(image, name, price)}>Add Cart</button>
     </div>
 </div>
   )
