@@ -11,19 +11,21 @@ const removeCart = (name:string) => {
   setProduct(cart)
 }
 
+const price = product.map((e:any) => e.price);
+
   return (
     <>
-        <div className='   bg-white border border-gray-400  lg:w-[30%]  lg:h-[50%]   lg:pb-10  rounded-xl  md:w-[70%] sm:pb-20 sm:w-[90%] sm:h-[40%]    '>
+        <div className='   bg-white border relative border-gray-100  lg:w-[30%]  lg:h-[50%]   lg:pb-10  rounded-xl  md:w-[70%] sm:pb-20 sm:w-[90%] sm:h-[40%]    '>
             <div className='  '>
                 <div className=' flex justify-between border-b-2'>
                     <h1 className=' pl-5 text-2xl pt-5 font-bold  pb-7'>Cart</h1>
                     <h3 onClick={() => setClose(!close)} className=' text-2xl mr-5 mt-4  ' ><BiX className=' hover:bg-red-600 rounded-lg  hover:text-white cursor-pointer w-7 h-7 mt-2'/></h3>
                 </div>
-                  <div className=' overflow-y-scroll w-[100%] h-[330px]'>
+                  <div className='overflow-y-auto w-[100%] h-[330px] mb-10'>
                    {product.map((prod:any) => (
                     <>
                     <div className=' '>
-                    <div className=' flex  justify-between border-b-2  pb-2  '>
+                    <div className=' flex  justify-between border-b border-gray-100  pb-2  '>
                         <div className='flex   '>
                             <img className=' w-24 h-14 ml-5 mt-[17px]' src={prod.image} alt="" />
                             <div>
@@ -33,7 +35,6 @@ const removeCart = (name:string) => {
                             
                         </div>
                         <button type='button' onClick={() => removeCart(prod.name)} className=' bg-red-600  text-white w-8 h-8 rounded-full  mt-6 mr-3' ><BiX className=' w-6 h-6  ml-1'/></button>
-                        
                     </div>
                  </div>
                  </>
@@ -47,8 +48,11 @@ const removeCart = (name:string) => {
                   <button className=' bg-blue-600 text-white w-24 h-8 mt-5 mr-4 text-sm font-semibold'  >Buy Now</button>
                 </div> */}
 
-                 <div className=' flex justify-center ' >
-                   <button className='  bg-red-600  w-48 h-12 mt-20 text-white font-bold text-xl' >Total </button> 
+                 <div className=' flex justify-between px-6 absolute bg-white h-20 bottom-0 items-center w-full' >
+                   <div className='font-bold text-xl' >Total </div> 
+                   <div className='text-2xl font-medium'>
+                    {`$${price.reduce((sum:any, current:any) => sum + current, 0)}`}
+                   </div>
                  </div>                
             </div>
         </div>
