@@ -15,7 +15,7 @@ const price = product.map((e:any) => e.price);
 
   return (
     <>
-        <div className='   bg-white border relative border-gray-100  lg:w-[30%]  lg:h-[50%]   lg:pb-10  rounded-xl  md:w-[70%] sm:pb-20 sm:w-[90%] sm:h-[40%]    '>
+        <div className='   bg-white border relative  border-gray-100  lg:w-[30%]  lg:h-[50%]   lg:pb-10  rounded-xl  md:w-[70%] sm:pb-20 sm:w-[90%] sm:h-[40%]    '>
             <div className='  '>
                 <div className=' flex justify-between border-b-2'>
                     <h1 className=' pl-5 text-2xl pt-5 font-bold  pb-7'>Cart</h1>
