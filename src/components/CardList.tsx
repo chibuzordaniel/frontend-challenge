@@ -42,7 +42,7 @@ const CardList = ({value, setValue, isProduct, filter, handleProduct}:Props) => 
                     </div>
                 </div>
                 <div className=' lg:grid grid-cols-4 lg:mt-40 md:mt-40 sm:mt-56 gap-12 md:block '>
-
+                    
                     {!filter?.length || value === '' ?
                         products.map((product) => (
                               <ItemCard 
@@ -58,9 +58,8 @@ const CardList = ({value, setValue, isProduct, filter, handleProduct}:Props) => 
                                 name={product.name} 
                                 price={product.price} 
                                 handleProduct={handleProduct}  />   
-                              ))
+                            ))
                     }
-                    
                 </div>
             </div>
         </div>

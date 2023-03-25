@@ -17,6 +17,7 @@ export const products = [
         
     },
     {
+        
         id :2,
         name:'hp',
         price: 710,

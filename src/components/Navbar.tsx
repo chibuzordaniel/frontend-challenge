@@ -24,9 +24,7 @@ const Navbar = ({product, setProduct}:any) => {
             <div className='relative lg:left-[1090px] md:left-48 sm:left-4'>
             {close && <ShopCart setClose={setClose} product={product} setProduct={setProduct} />}
             </div>
-           
         </div>
-      
     </>
   )
 }
