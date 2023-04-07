@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
         <div className=' bg-[#EEEEEE] w-[100%] h-[100%] mt-40  pb-10'>
-            <div className='border-[#dcd9d9] border-b-[1px] '>
+            <div className='border-[#dcd9d9] border-b-[1px] sm:pl-4 lg:pl-0 '>
                 <div className=' max-w-[1200px] mx-auto'>
                     <div  className=''>
                         <div className=' lg:flex  justify-between pt-7 pb-4 md:block '>
@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className=' max-w-[1200px] justify-between mx-auto pt-6'>
+            <div className=' max-w-[1200px] justify-between mx-auto pt-6  sm:pl-4 lg:pl-0'>
                 <div className=' lg:flex lg:text-sm justify-between md:block md:text-lg'>
                     <h2>@2019 wiz sullivan inc. All Rights Reserved</h2>
                    <div className=' flex gap-14 lg:pt-0 md:pt-4'>
